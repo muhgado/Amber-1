@@ -16,8 +16,20 @@
 	<link rel="stylesheet" href="style.css">
 	<!--------------------- favicon --------------------->
 	<link rel="icon" href="img/amber.png" type="image/png" sizes="16x16">
+	<!-----------------------AOS Library-------------------------->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+	<!--------------------- pageloader --------------------->
+	<div class="preloader">
+		<div class="loader">
+			<span></span>
+	  		<span></span>
+	  		<span></span>
+		</div>
+		<h3>Content is loading, please wait.</h3>
+	</div>
+
 	<!--------------------- header --------------------->
 	<header class="header">
 		<!--------------------- navbar--------------------->
@@ -55,7 +67,7 @@
 							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
 							</p>
 							<div>
-								<a href="#nivolumab"><button type="button" class="btn btn-lg btn-secondary">Learn More <i class="fa fa-question text-white" aria-hidden="true"></i></button></a>
+								<a href="#HCC"><button type="button" class="btn btn-lg btn-secondary">Learn More <i class="fa fa-question text-white" aria-hidden="true"></i></button></a>
 								<a href="https://give.afnci.org.eg" target="_blank"><button type="button" class="btn btn-lg text-white" style="background-color: #346d3c!important;"><i class="fa fa-credit-card text-white" aria-hidden="true"></i> Save Lives by Donating to Cancer Patients Now!</button></a>
 			        		</div>
 			        	</div>
@@ -70,7 +82,7 @@
 			</div>
 		</section>
 		<!---------------------svg--------------------->
-		<div class="container-fluid pt-5 svg">
+		<div class="pt-5">
             <svg style="fill: #fff; width: 102%;" x="0px" y="0px" viewBox="0 186.5 1920 113.5">
                 <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 " />
             </svg>
@@ -80,14 +92,15 @@
 	<!--------------------- End header --------------------->
 
 	<!--------------------- section2 --------------------->
-	<section style="margin: 4rem 0;" id="nivolumab">
+	<section style="margin: 4rem 0;" id="HCC" data-aos="fade-in">
 		<div class="container text-center">
-			<h1 class="mb-5">What is Nivolumab</h1>
+			<h1 class="mb-5">What is Hepatocellular Carcinoma</h1>
 			<div class="row justify-content-between">
 				<div class="col-md-3">
-            		<div class="nivolumab">
-            			<img class="img-fluid" src="img/Nivolumab220px.png" alt="Nivolumab structure" style="display: block; margin: 0 auto;">
-            			    <p class="text-center">Antigen-binding fragment of nivolumab binding the extracellular domain of PD-1.</p>
+            		<div class="HCC">
+            			<img class="img-fluid" src="img/liver.png" alt="Picture showwing healthy liver, liver with cirrhosis, and HCC" style="display: block; margin-bottom: 2rem;">
+            			    <p class="text-center">The diagram is showing a healthy liver, a cirrhotic liver and a liver in end-stage cirrhosis with hepatocellular carcinoma.<br> The little dots represents viruses.
+							</p>
             		</div>
 				</div>
 				<div class="col-md-8 offset-md-1">
@@ -108,7 +121,7 @@
 		</div>
 	</section>
 	<!--------------------- section3 --------------------->
-    <section id="papersections">
+    <section id="papersections" data-aos="slide-right">
       	<div class="container-fluid p-0 m-0">
 			<div class="row p-0 text-center align-items-stretch">
 
@@ -155,10 +168,17 @@
 	<footer>
 		<div class="container-fluid p-0 m-0">
 			<!---------------- upper section ---------->
-			<section class="up">
-				<div class="row p-0 text-center align-items-stretch">
-					<!----------- --------------->
-		          	<div class="col-lg-3 col-md-6 p-0">
+			<section class="pr-5 pl-5 text-center text-md-left">
+				<div class="row p-0">
+					<!----------- Project Amber--------------->
+		          	<div class="col-md-4 p-0 d-md-flex justify-content-center">
+		           		<div class="p-5">
+	           				<h4>About Project Amber</h4>
+	           				<p>Project Amber is a graduation project for Egypt Scholars 8th basic research Lab.<br>Amber is aimed at increasing the awareness about Hepatocellular carcinoma disease treatments by utilizing the data published from the <a href="https://clinicaltrials.gov/ct2/show/NCT01658878" target="_blank" class="text-white">CheckMate 040 clinical trial.</a></p>
+		            	</div>
+		          	</div>
+					<!----------- Team Members--------------->
+		          	<div class="col-md-4 p-0 d-md-flex justify-content-center">
 	           			<div class="p-5">
 							<ul class="team list-group list-unstyled">
 								<h4>Amber Team Members</h4>
@@ -170,94 +190,25 @@
 							</ul>
 	            		</div>
 		    		</div>
-		    		<!----------- --------------->
-		          	<div class="col-lg-3 col-md-6 p-0">
-	           			<div class="p-5">
-							<ul class="team list-group list-unstyled">
-								<h4>Amber Team Members</h4>
-								<li>Muhammad Gado, Mansoura University</li>
-								<li>Doha Mohamed, Cairo University</li>
-								<li>Karim Mersal, KIST</li>
-								<li>Sara Safwat, Al-Azhar University</li>
-								<li>Hamsa Hassan, Mansoura University</li>
-							</ul>
-	            		</div>
-		          	</div>
-		          	<!----------- --------------->
-		          	<div class="col-lg-3 col-md-6 p-0 order-md-4 order-lg-3">
-		           		<div class="p-5">
-							<ul class="team list-group list-unstyled">
-								<h4>Amber Team Members</h4>
-								<li>Muhammad Gado, Mansoura University</li>
-								<li>Doha Mohamed, Cairo University</li>
-								<li>Karim Mersal, KIST</li>
-								<li>Sara Safwat, Al-Azhar University</li>
-								<li>Hamsa Hassan, Mansoura University</li>
-							</ul>
-		            	</div>
-		          	</div>
-		          	<!----------- --------------->
-		          	<div class="col-lg-3 col-md-6 p-0 order-md-3 order-lg-4">
-		           		<div class="p-5">
-							<ul class="team list-group list-unstyled">
-								<h4>Amber Team Members</h4>
-								<li>Muhammad Gado, Mansoura University</li>
-								<li>Doha Mohamed, Cairo University</li>
-								<li>Karim Mersal, KIST</li>
-								<li>Sara Safwat, Al-Azhar University</li>
-								<li>Hamsa Hassan, Mansoura University</li>
-							</ul>
-		            	</div>
+		          	<!----------- Reach out or connect --------------->
+		          	<div class="col-md-4 p-0 d-md-flex justify-content-center">
+						<ul class=" connect p-5 list-group list-unstyled">
+							<h4>Connect with Egypt Scholars</h4>
+							<a href="https://www.linkedin.com/company/egypt-scholars-inc-" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin</a>
+							<a href="https://www.facebook.com/EgyptScholars" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
+							<a href="https://www.youtube.com/egyptscholars" target="_blank"><i class="fa fa-youtube-square " aria-hidden="true"></i>Youtube</a>
+							<a href="https://egyptscholars.org" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i>ES Website</a>
+						</ul>
 		          	</div>
 		        </div>
 	        </section>
 	        <!---------------- lower section ---------->
-			<section class="down">
-				<div class="row p-0 text-center align-items-stretch">
-					<!----------- --------------->
-		          	<div class="col-lg-3 col-md-6 p-0">
-	           			<div class="p-5">
-							<ul class="team list-group list-unstyled">
-								<h4>Amber Team Members</h4>
-								<li>Muhammad Gado, Mansoura University</li>
-								<li>Doha Mohamed, Cairo University</li>
-								<li>Karim Mersal, KIST</li>
-								<li>Sara Safwat, Al-Azhar University</li>
-								<li>Hamsa Hassan, Mansoura University</li>
-							</ul>
-	            		</div>
-		    		</div>
-		    		<!----------- --------------->
-		          	<div class="col-lg-3 col-md-6 p-0">
-	           			<div class="p-5">
-							<ul class="team list-group list-unstyled">
-								<h4>Amber Team Members</h4>
-								<li>Muhammad Gado, Mansoura University</li>
-								<li>Doha Mohamed, Cairo University</li>
-								<li>Karim Mersal, KIST</li>
-								<li>Sara Safwat, Al-Azhar University</li>
-								<li>Hamsa Hassan, Mansoura University</li>
-							</ul>
-	            		</div>
-		          	</div>
-					<!----------- --------------->
-		          	<div class="col-lg-3 col-md-6 p-0 order-md-4 order-lg-3">
-		           		<div class="p-5">
-							<ul class="team list-group list-unstyled">
-								<h4>Amber Team Members</h4>
-								<li>Muhammad Gado, Mansoura University</li>
-								<li>Doha Mohamed, Cairo University</li>
-								<li>Karim Mersal, KIST</li>
-								<li>Sara Safwat, Al-Azhar University</li>
-								<li>Hamsa Hassan, Mansoura University</li>
-							</ul>
-		            	</div>
-		          	</div>
-					<!-----------logo--------------->
-		          	<div class="col-lg-3 col-md-6 p-0 order-md-3 order-lg-4">
-		           		<div class="p-5">
-							<img class="eslogo" src="img/eswhite.png" alt="Egypt Scholars inc logo">
-		            	</div>
+			<section class="text-center">
+				<div class="row p-0 mx-auto">
+		          	<!-----------Amber logo--------------->
+		          	<div class="col-md-12 p-3 mx-auto text-center">
+	           			<img class="amberlogo" src="img/amberlogo.png" title="Team Amber" alt="Team Amber logo">
+						<a href="https://egyptscholars.org/project/labs/" title="Egypt Scholars Labs" target="_blank"><img class="eslabslogo" src="img/eslabswhite.png" alt="Egypt Scholars inc logo"></a>
 		          	</div>
 		        </div>
 	        </section>
@@ -265,12 +216,9 @@
 			<!-------------- copyrights ------------------->
 			<div class="copyrights col-12 py-4 mt-5">
 				<p class="font-weight-bold text-uppercase text-center m-0 p-0">
-					Project is made solely by members of <span style="color: darkgray;">Team Amber</span> in 2020, all right preserved
+					&copy; Amber project is made solely by <span style="color: darkgray;">Team Amber</span> in 2020, all right preserved
 				 	| <span style="color: darkgray;">For Every Mind Makes a Difference!</span></p>
 			</div>
-			</div>
-
-		</div>
 
 	</footer>
 	<!--------------------- End footer --------------------->
@@ -283,7 +231,9 @@
 	<script src="https://use.fontawesome.com/2cbb281eb0.js"></script>
 	<!------------------ smooth scroll ------------------>
 	<script src="js/smooth-scroll.js"></script>
+	<!--------------------AOS Library ------------------------------->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<!--------------------- main js --------------------->
-	<script src="js/script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

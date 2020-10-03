@@ -1,3 +1,13 @@
+//AOS Lobrary
+AOS.init({
+	offset: 100,
+	duration: 1500
+});
+// loader
+window.addEventListener('load', function () {
+	const preloader = document.querySelector('.preloader');
+	preloader.classList.add('endpreloader');
+});
 //navbarOnScroll
 $(function () {
     $(window).on('scroll', function () {
