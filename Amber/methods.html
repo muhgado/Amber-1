@@ -15,7 +15,7 @@
       content="Hepatocellular carcinoma, HCC, Liver cancer, cancer, Nivolumab, sorafenib, clinical trial, patients, research, medicine, pharmacology"
     />
     <!--------------------- title --------------------->
-    <title>Results | Project Amber</title>
+    <title>Methods | Project Amber</title>
     <!--------------------- boostrap --------------------->
     <link
       rel="stylesheet"
@@ -33,84 +33,88 @@
       .navbar {
   background-color: #6d3469;
 }
-@media (max-width: 768px) {
-  .navbar {
-  background-color: #fff;
-}}
 .subtitles-header {
   margin: 0 auto;
 }
 
 .mheader {
-  background-image: url(img/result.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:50% calc(50% - -207px);
+  background-image: url(img/opMethods.png);
+  background-size: contain;
 }
 .mheader h1 {
   text-shadow: 3px 3px 1px #4d4d4d;
 }
-#efficacy .header h3, #patients .header h3 {
-  background-color: #FFB001;
-  border-radius: 7px;
-  text-align: center;
-  max-width: 30%;
-  padding: 7px;
-  margin: 0 auto;
-  letter-spacing: 1px;
+.scol {
+  background-color: #d04e67;
+  height: 175px;
+  width: 80%;
+  border-radius: 5px;
 }
-#patients .header h3 {
-  background-color: #0eac92;
+.scol2 {
+  background-color: #f1f1f1;
+  border-radius: 5px;
 }
-#efficacy .header h3 {
-  background-color: #f3777d;
+.scol2 p, .geop, #safety .header p span {
+  color: #4d4d4d;
 }
-#efficacy .header p, #HCC p, #patients .header p {
-  width: 70%;
-    text-align: center;
-    color: #4d4d4d;
-    margin: 0 auto;
-}
-#efficacy p, #efficacy a, #patients p, #patients a {
-    font-size: 14px;
-}
-
-.slide-5 {
-  padding: 0 4rem;
-  margin-top: 7rem;
-}
-.slide-5 img, .slide-4 img {
-    width: 65%;
-}
-.slide-4 .middle-img {
-  width: 95%;
-}
-.slide-1 img {
-  width: 85%;
-}
-.slide-1 .img2 {
-  display: block;
-  margin-right: auto;
-}
-.slide-1 .img1 {
-  display: block;
+.Icol {
+  background-color: #3997cb;
+  height: 175px;
+  width: 80%;
   margin-left: auto;
+  border-radius: 5px;
 }
 @media (max-width: 768px) {
-.slide-5, .slide-4 {
-  padding: 0;
+  .scol, .Icol {
+  border-radius: 0;
+  width: 100%;
+  }
+  .scol2 {
+    padding-top: 10px;
+    border-radius: 0;
+  }
+  .scol-parent {
+    background-color: #d04e67;
+  }
+  .scol2-parent {
+    background-color: #3997cb;
+  }
+  .navbar {
+  background-color: #fff;
 }
-.slide-5 img, .slide-4 img {
-    width: 40%;
 }
-.slide-1 .img2 {
-  margin: 0 auto;
+.countries{
+  background-color: #6d3469;
 }
-.slide-1 .img1 {
-  margin: 0 auto;
-}}
-
-
+.geo {
+  background: antiquewhite;
+    border-radius: 5px;
+    padding: 13px;
+}
+.geo img {
+  width:30px;
+  height: 30px;
+  margin: 5px;
+}
+.geo img:hover {
+  transform: rotate(20deg);
+}
+.svgshape {
+      background-color: #fff;
+}
+.endpoint-card {
+  border: 1px solid #dfdfdf;
+    height: 136px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    text-align: center;
+}
+.endpoint-card p, .endpoint-card h4 {
+  color: #4d4d4d;
+}
+.endpoint-card h4 {
+  font-weight: bold;
+}
     </style>
   </head>
   <body>
@@ -164,9 +168,9 @@
       <!--------------------- End nav --------------------->
     <!--------------------- header --------------------->
     <header class="resultsheader">
-      <!--------------------- Results header----------------------------->
+      <!--------------------- header----------------------------->
       <section class="container py-5 mheader">
-        <h1 class="display-3 text-white text-center">Results</h1>
+        <h1 class="display-3 text-white text-center">Methodology</h1>
         <div class="row">
           <!----------------subtitles----------------------------->
           <div class="col-6 subtitles-header">
@@ -174,20 +178,20 @@
                   <div class="container m-0 p-0">
                     <div class="row justify-content-between">
                       <div class="col-lg-4 col-12">
-                        <a href="#patients" class="subtitle">
-                          <p>Patients</p>
+                        <a href="#design" class="subtitle">
+                          <p>Study design</p>
+                          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="col-lg-4 col-12">
+                        <a href="#criteria" class="subtitle">
+                          <p>Inclusion criteria</p>
                           <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
                       </div>
                       <div class="col-lg-4 col-12">
                         <a href="#safety" class="subtitle">
-                          <p>Safety</p>
-                          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                      </div>
-                      <div class="col-lg-4 col-12">
-                        <a href="#efficacy" class="subtitle">
-                          <p>Efficacy</p>
+                          <p>Endpoints</p>
                           <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
                       </div>
@@ -200,162 +204,132 @@
     </header>
     <!--------------------- End header --------------------->
 
-    <!--------------------- Patients -------------------------------->
-    <section id="patients" class="py-5">
+    <!--------------------- Study design -------------------------------->
+    <section id="sdesign" class="mt-5" data-aos="fade-right">
       <div class="container">
-          <!----------- header ------------->
-          <div class="header">
-            <h3 class="mb-4 text-white font-weight-bold" style="min-width: 30%;">Patients</h3>
-            <p class="font-weight-bold mt-5" style="font-size: 20px; color: #6d6d6d;">Patients Distribution</p>
-         </div>
-        </div>
-        <div class="container">
-
-            <div class="row slide-1 justify-content-center align-items-center">
-
-              <div class="col-12 col-md-6 text-center">
-                <img class="img1" src="img/Slide1-l.PNG" data-aos="fade-right">
-              </div>
-
-              <div class="col-12 col-md-6 text-center">
-                <img class="img2" src="img/Slide1-r.PNG" data-aos="fade-left">
-              </div>
-
+        <div class="row">
+          <div class="scol-parent col-12 col-md-4 ">
+            <div class="scol d-flex align-items-center justify-content-center">
+              <h3 class="text-center text-white h1">Study design</h3>
             </div>
-
-            <div class="row slide-4 justify-content-center align-items-center mt-5" data-aos="fade-in">
-
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide2-l.PNG">
-              </div>
-
-              <div class="col-12 col-md-6 text-center ">
-                <img class="middle-img" src="img/Slide2-m.PNG">
-              </div>
-
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide2-r.PNG">
-              </div>
-
-            </div>
-
-            <div class="row slide-4 justify-content-center align-items-center mt-5" data-aos="zoom-in-up">
-
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide3-l.PNG">
-              </div>
-
-              <div class="col-12 col-md-6 text-center ">
-                <img class="middle-img" src="img/Slide3-m.PNG">
-              </div>
-
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide3-r.PNG">
-              </div>
-
-            </div>
-        </div>
-    </section>
-    <!---------------------Efficacy section------------------------->
-    <section id="efficacy" class="py-5" >
-      <div class="container">
-          <!----------- header ------------->
-          <div class="header" >
-            <h3 class="mb-4 text-white font-weight-bold">Efficacy</h3>
-         </div>
-        </div>
-        <div class="container" data-aos="fade-in">
-          <div class="row slide-4 justify-content-center align-items-center">
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide4-l.PNG" alt="Efficacy 1">
-              </div>
-              <div class="col-12 col-md-6 text-center ">
-                <img class="middle-img" src="img/Slide4-m.PNG" alt="Efficacy 1">
-              </div>
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide4-r.PNG" alt="Efficacy 1">
-              </div>
           </div>
-          <div class="row slide-5 justify-content-center align-items-center" data-aos="fade-in">
-            <div class="col-12 col-md-4 text-center">
-              <img  src="img/Slide5-1.PNG" alt="reduction in tumor burden was observed">
-            </div>
-            <div class="col-12 col-md-4 text-center">
-              <img  src="img/Slide5-2.PNG" alt="Survival rates achieved up to 24 months">
-            </div>
-            <div class="col-12 col-md-4 text-center">
-            <img  src="img/Slide5-3.PNG" alt="All results were achieved regardless of disease atiology, PD-L1 tumor expression and age">
+          <div class="scol2 col-12 col-md-8 d-flex align-items-center">
+            <p class="lead">
+              The study is a post-hoc analysis of CheckMate 040: a phase 1/2 multi-centric clinical trial that evaluated nivolumab in HCC patients. It had a dose-escalation and a dose-expansion phases, and about 85 participants in the Asian cohort and 182 in the general population group. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------Inclusion criteria------------------------>
+    <section class="mt-5" id="criteria" data-aos="fade-left">
+      <div class="container">
+        <div class="row">
+          <div class="scol2 col-12 col-md-8 d-flex align-items-center order-2 order-md-1">
+            <p class="lead ml-3">
+              Patients over 18 years old who: <br>
+              &#9658; have advanced HCC with or without viral hepatitis<br>
+              &#9658; were previously treated with Sorafenib<br>
+              &#9658; are not amenable to
+              curative resection or local treatment.
+            </p>
+          </div>
+          <div class="scol2-parent col-12 col-md-4 order-1 order-sm-2">
+            <div class="Icol d-flex align-items-center justify-content-center">
+              <h3 class="text-white text-center h1">Inclusion criteria</h3>
             </div>
           </div>
         </div>
+      </div>
     </section>
-    <!---------------------Safety section------------------------->
-    <section id="safety" class="py-5" data-aos="fade-up">
+    <!--------------------countries----------------->
+      <div class="container mt-5" data-aos="flip-up">
+        <div class="row">
+          <div class="geo col-12 col-md-7">
+            <p class="lead geop text-center">Geographical Distribution of The Study's Population</p>
+            <div class="d-flex justify-content-center">
+              <img src="img/canada.png">
+              <img src="img/united-states.png">
+              <img src="img/germany.png">
+              <img src="img/italy.png">
+              <img src="img/hong-kong.png">
+              <img src="img/japan.png">
+              <img src="img/singapore.png">
+              <img src="img/south-korea.png">
+              <img src="img/united-kingdom.png">
+              <img src="img/taiwan.png">
+              <img src="img/spain.png">
+          </div>
+        </div>
+          <div class="geo col-12 col-md-5">
+            <p class="lead geop text-center">Dosage of Nivolumab that Most patients received</p>
+            <p class="lead geop text-center"><span style="font-size: 2rem;">3</span> mg/kg</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------Endpoints section------------------------->
+    <section id="safety" class="py-5 Endpoints" data-aos="zoom-in-down">
       <div class="container">
         <!----------- header ------------->
         <div class="header">
-          <h3 class="mb-4 text-white font-weight-bold">Safety</h3>
-          <p class="mb-4 mt-5">
-            During any therapy, the potential exists for treatment-related adverse events (TRAEs) to occur. In CheckMate 040, patients’ safety was assessed continuously using
-            <a href="https://evs.nci.nih.gov/ftp1/CTCAE/CTCAE_4.03/CTCAE_4.03_2010-06-14_QuickReference_8.5x11.pdf" target="_blank">The Common Terminology Criteria for Adverse Events (CTCAE 4.03)</a> to assess the grading of any TRAEs.
+          <h3 class="mb-4 text-white font-weight-bold" style="min-width: 30%;">Endpoints and Assessments</h3>
+          <p class="mb-4">
+            The primary endpoint was to assess the <span class="font-weight-bold lead">safety and tolerability</span> of Nivolumab in both populations.<br>
+            The secondary endpoint was to assess <span class="font-weight-bold lead">ORR, CR, DCR, DOR, and OS</span> parameters in the trial.
           </p>
-          <img class="mt-5" src="img/TRAEs.png" alt="Grading and Severity of TRAEs">
+       </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-4 m-0">
+            <div class="m-3 p-3 endpoint-card">
+              <h4>Objective Response Rate (ORR)</h4>
+              <p class="lead">The proportion of patients with tumor size reduction of a predefined amount and for a minimum time period [<a target="_blank" class="lead" href="conc.html#ref">3</a>]</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 m-0">
+            <div class="m-3 p-3 endpoint-card">
+              <h4>Complete Response (CR)</h4>
+              <p class="lead"> Defined as no detectable evidence of tumor [<a class="lead" target="_blank" href="conc.html#ref">3</a>]</p>
+            </div>
+          </div>
+
+            <div class="col-12 col-md-4 m-0">
+            <div class="m-3 p-3 endpoint-card">
+              <h4>Complete Response (CR) Rate</h4>
+              <p class="lead"> The proportion of subjects whose best overall response (BOR) is CR in the population of interest [<a class="lead" target="_blank" href="conc.html#ref">3</a>]</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 m-0">
+            <div class="m-3 p-3 endpoint-card">
+              <h4>Disease Control Rate (DCR)</h4>
+              <p class="lead">The proportion of subjects whose best overall response is complete Response (CR), Partial response (PR) or stable disease (SD) in the population of interest [<a class="lead" href="conc.html#ref" target="_blank">3</a>]</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 m-0">
+            <div class="m-3 p-3 endpoint-card">
+              <h4>Duration of Response (DOR)</h4>
+              <p class="lead">The time between the date of first radiographic documented objective response and the date of the radiographic disease progression [<a class="lead" href="conc.html#ref" target="_blank">3</a>]</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 m-0">
+            <div class="m-3 p-3 endpoint-card">
+              <h4>Overall Survival (OS)</h4>
+              <p class="lead">The time from date of randomization to the date of death [<a class="lead" href="conc.html#ref" target="_blank">3</a>]</p>
+            </div>
+          </div>
         </div>
-      <!-------- content --------------->
-        <div class="row pt-5 mt-5" data-aos="fade-in">
-          <!---------------------- any grade TRAEs ----------------------------------->
-          <div class="col-12 col-md-4 anygrade">
-            <h3 class="titles font-weight-bold mb-3">Any Grade TRAEs</h3>
-            <p class="lead font-weight-bold">Frequency:</p>
-            <div class="progress my-3">
-             <div class="progress-bar bg-danger" style="width:74%">Asian (74%)</div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-success" style="width:79%">ITT population (79%)</div>
-            </div>
-            <p class="my-3"><span class="lead font-weight-bold">Most common AEs:</span> Pruritus, rash and fatigue.</p>
-            <p><span class="lead font-weight-bold">Intervention:</span> Systemic corticosteroids.</p>
-            <p><span class="lead font-weight-bold">Additional notes:</span> Rechallenge of nivolumab occurred in 29 events in the Asian population after an immune-mediated response. The Rechallenge outcome was recorded in 11 events in which 10 patients did not have a recurrence of the AE after rechallenge.</p>
-          </div>
-          <!---------------------- grade 3/4 TRAEs ----------------------------------->
-          <div class="col-12 col-md-4">
-            <h3 class="titles font-weight-bold mb-3">3/4 Grade TRAEs</h3>
-            <p class="lead font-weight-bold">Frequency:</p>
-            <div class="progress my-3">
-             <div class="progress-bar bg-danger" style="width:16%">Asian (16%)</div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-success" style="width:19%">ITT (19%)</div>
-            </div>
-            <h3 class="titles font-weight-bold mt-5 mb-3">TRAEs of Lab Measures</h3>
-            <p>These were infrequent in both populations and viral kinetics changes were not associated with significant hepatic AEs. </p>
-          </div>
-          <!---------------------- Select TRAEs ----------------------------------->
-          <div class="col-12 col-md-4">
-            <h3 class="titles font-weight-bold mb-3">Select TRAEs (sTRAEs)</h3>
-            <p class="my-3"><span class="lead font-weight-bold">Definition:</span> These were events with a potential inflammatory mechanism that required more frequent monitoring such as hepatitis and infusion hypersensitivity.</p>
-            <p class="lead font-weight-bold">Most common sTRAEs:</p>
-            <p><strong>Of any grade:</strong> Skin and gastrointestinal events.</p>
-            <p><strong>For which patients received immune-modulating therapy:</strong> Skin AEs—for which topical corticosteroids were prescribed.</p>
-            <p></p>
-          </div>
-        </div>
-      </div>  
-      <!-------death------>
-        <div class="container mt-5" data-aos="fade-right">
-          <h3 class="deaths-title font-weight-bold mb-3">Deaths</h3>
-          <div class="row align-items-end">
-            <div class="col-12 col-md-4">
-              <img src="img/death.png" class="opacity-4 death-img" width="85%;">
-            </div>
-            <div class="col-12 col-md-8">
-              <p><span class="lead font-weight-bold">130 ITT patients and 60 Asians</span> died throughout the study with <span class="lead font-weight-bold">disease progression</span> as the most common cause of death. One Asian patient died from a grade 5 pneumonitis occurring after 3.3 months of nivolumab discontinuation. Three died from intracranial hemorrhage, suspected infection, and indeterminable.</p>
-            </div>
-          </div>
        </div>
     </section>
     <!--------------------svg----------------------------------->
-    <div class="svgshape" style="background-color: #fff;">
+    <div class="svgshape">
 		  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
 		  <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
 		  </svg>

@@ -20,3 +20,7 @@ $(function () {
 });
 //smoothscroll
 var scroll = new SmoothScroll('a[href*="#"]');
+// video speed
+var frame = document.getElementById("myframe");
+var fdoc = frame.contentDocument;
+fdoc.getElementsByTagName("video")[0].playbackRate = 3;

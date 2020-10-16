@@ -27,6 +27,12 @@ body {
   background-color: #6d3469;
   background-image: linear-gradient(149deg, #6d3469 0%, #fff 117%);
 }
+.link{
+	color: #dcdcdc;
+}
+.link:hover {
+	color: white;
+}
 /* ------------------------------logo------------------------------*/
 #amber {
   color: #fff;
@@ -106,40 +112,7 @@ nav ul li {
     margin-bottom: 5px;
   }
 }
-/* ------------------------------ end header -----------------------------*/
-/*--------------------- section2 - Nivolumab  ---------------------*/
-#HCC::before {
-  content: '';
-  display: block;
-  height: 160px;
-  margin-top: -160px;
-  visibility: hidden;
-}
-/*--------------------- section3 - papersections ---------------------*/
-#papersections {
-  padding: 8rem 0;
-  background-color: #F3F3FB;
-}
-#papersections .section {
-	background-color: #fff;
-	border: 1px solid #ececec;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 4px 35px;
-    -webkit-box-shadow: 0px 0px 59px -48px rgba(0,0,0,1);
-	-moz-box-shadow: 0px 0px 59px -48px rgba(0,0,0,1);
-	box-shadow: 0px 0px 59px -48px rgba(0,0,0,1)
-}
-#papersections .section:hover {
-    -webkit-box-shadow: 0px 0px 59px -48px rgba(0,0,0,0);
-	-moz-box-shadow: 0px 0px 59px -48px rgba(0,0,0,0);
-	box-shadow: 0px 0px 59px -48px rgba(0,0,0,0)
-}
-#papersections .section img {
-	max-width: 100%;
-	max-height: 100px;
-	margin-bottom: 3rem;
-}
+
 /*--------------------------svg--------------------------------*/
 .svgshape {
     position: static;
@@ -159,6 +132,93 @@ nav ul li {
 
 .svgshape .shape-fill {
     fill: #6d3469;
+}
+/* ------------------------------ end header -----------------------------*/
+/*--------------------------- Sec2 ---------------------------------*/
+#HCC {
+	margin: 4rem 0;
+}
+#responsiveyt {
+	overflow: hidden;
+	padding-bottom: 56.22%;
+	position: relative;
+	height: 0;
+}
+#responsiveyt iframe {
+	position: absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	height: 60%;
+	width: 60%;
+}
+@media (max-width: 760px) {
+#responsiveyt iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 90%;
+	width: 90%;
+}}
+#hetero {
+	margin-top: -18rem;
+}
+@media (max-width: 991px) {
+#hetero {
+	margin-top: -13rem;
+}}
+@media (max-width: 768px) {
+#hetero {
+	margin-top: -9rem;
+}}
+@media (max-width: 760px) {
+#hetero {
+	margin-top: -3rem;
+}}
+#img-hetero {
+	width: 80%;
+	height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#hetero .HCC-hetero {
+	margin: 0 auto;
+	padding: 10px;
+}
+.p-hetero {
+	text-align: center;
+    color: #4d4d4d;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*--------------------- section3 - papersections ---------------------*/
+#papersections {
+  margin-top: 5rem; 
+  padding: 5rem 0;
+  background-color: #F3F3FB;
+}
+#papersections .section {
+	background-color: #fff;
+	border: 1px solid #ececec;
+    margin: 14px;
+    padding: 20px;
+    height: 280px;
+    border-radius: 4px 35px;
+    -webkit-box-shadow: 0px 0px 59px -48px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 59px -48px rgba(0,0,0,1);
+	box-shadow: 0px 0px 59px -48px rgba(0,0,0,1)
+}
+#papersections .section:hover {
+    -webkit-box-shadow: 0px 0px 59px -48px rgba(0,0,0,0);
+	-moz-box-shadow: 0px 0px 59px -48px rgba(0,0,0,0);
+	box-shadow: 0px 0px 59px -48px rgba(0,0,0,0)
+}
+#papersections .section img {
+	max-width: 100%;
+	max-height: 100px;
+	margin-bottom: 3rem;
 }
 /* ----------------------------footer ------------------------------*/
 
@@ -262,7 +322,89 @@ footer .connect i {
   }
 }
 
-/*---------------------------------------  Results Page   ------------------------------------------*/
+/*------------------------------------------------------------  Results Page   ----------------------------------------------------------------*/
+/*-------------------------------header-----------------------------------*/
 .resultsheader{
-	background-color: white;
+	background-color: #6d3469;
 }
+/*----------------subtitles-----------------------------*/
+.subtitle {
+	border-radius: 15px;
+	background-color: white; 
+	padding: 10px;
+	margin: 2px;
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+.subtitle i {
+	margin-left: auto;
+	color: #6d3469;
+}
+.subtitle p {
+	margin: 0;
+	color: #6d3469;
+	font-weight: bold;
+}
+
+.subtitle:hover {
+	-webkit-box-shadow: 0px 0px 25px -5px rgb(255 255 255);
+	-moz-box-shadow: 0px 0px 25px -5px rgb(255 255 255);
+	box-shadow: 0px 0px 25px -5px rgb(255 255 255);
+}
+/*---------------------Patients section-------------------------*/
+/*---------------------Patient disposition section-------------------------*/
+/*---------------------Safety section-------------------------*/
+
+#safety .header h3 {
+	background-color: #FFB001;
+	border-radius: 7px;
+	text-align: center;
+	max-width: 30%;
+	padding: 7px;
+	margin: 0 auto;
+	letter-spacing: 1px;
+}
+#safety .header p, #HCC p {
+	width: 70%;
+    text-align: center;
+    color: #4d4d4d;
+    margin: 0 auto;
+}
+#safety p, #safety a {
+    font-size: 14px;
+}
+#safety .header img {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+}
+#safety .titles, .deaths-title {
+	text-align: center;
+}
+#safety .titles:after, .deaths-title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 12px;
+    background: #ffb001;
+    margin-top: -11px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.deaths-title:after{
+	background: #dc3545;
+	width: 32%;
+}
+#safety .progress {
+	height: 15px;
+}
+@media (max-width: 760px) {
+  .death-img {
+    display: block;
+    margin: 8px auto;
+  }
+}
+/*---------------------Efficacy section-------------------------*/
+
+

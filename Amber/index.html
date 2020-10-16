@@ -15,7 +15,7 @@
       content="Hepatocellular carcinoma, HCC, Liver cancer, cancer, Nivolumab, sorafenib, clinical trial, patients, research, medicine, pharmacology"
     />
     <!--------------------- title --------------------->
-    <title> Project Amber | ES Labs</title>
+    <title>Project Amber | ES Labs</title>
     <!--------------------- boostrap --------------------->
     <link
       rel="stylesheet"
@@ -46,7 +46,7 @@
       <!--------------------- navbar--------------------->
       <nav class="navbar navbar-expand-md sticky-top py-4">
         <div class="container">
-          <a href="#" class="navbar-brand"
+          <a href="index.html" class="navbar-brand"
             ><span id="amber">Team Amber | </span
             ><span id="es">ES 8th Lab project</span></a
           >
@@ -65,17 +65,17 @@
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a href="#" class="nav-link"
+                <a href="index.html" class="nav-link"
                   >Home<span class="sr-only">(current)</span></a
                 >
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">Methods</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Results</a></li>
+              <li class="nav-item"><a href="methods.html" class="nav-link">Methods</a></li>
+              <li class="nav-item"><a href="results.html" class="nav-link">Results</a></li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Conclusion</a>
+                <a href="conc.html" class="nav-link">Conclusion</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Refrences</a>
+                <a href="conc.html#ref" class="nav-link">References</a>
               </li>
             </ul>
           </div>
@@ -89,29 +89,20 @@
             <!--------------------- jumbotron --------------------->
             <div class="jumbotron" style="background: transparent !important">
               <h1 class="display-4 text-white">
-                Hi! Welcome to Amber.
+                Hi! Welcome to Project Amber.
               </h1>
               <p class="lead mb-0 text-white">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                We are going to walk you through a subgroup analysis of the <a href="https://clinicaltrials.gov/ct2/show/NCT01658878" class="lead link" target="_blank">CheckMate 040 clinical trial</a>. You will learn about hepatocellular carcinoma, the available treatments for the disease, and more!
               </p>
               <!--------------------- second P--------------------->
               <div class="pt-5">
                 <p class="lead text-white">
-                  Why do we use it? It is a long established fact that a reader
-                  will be distracted by the readable content of a page when
-                  looking at its layout. The point of using Lorem Ipsum is that
-                  it has a more-or-less normal distribution of letters, as
-                  opposed to using 'Content here, content here', making it look
-                  like readable English. Many desktop publishing packages and
-                  web page editors now use Lorem Ipsum as their default model
-                  text, and a search for 'lorem ipsum' will uncover many web
-                  sites still in their infancy.
+                  Before we do that, and in support of patients who suffer from liver cancer or any other type of malignancy, we included a button below that will direct you to the donation page of the Association of Friends of The National Cancer Free Initiative, where you can donate any amount of money and help save a life!
                 </p>
+                <p class="lead text-white">We also assigned a shade of the lavender color to the background as a sign of support for those living with all types of cancer and included the green ribbon in support of liver cancer patients.</p>
                 <div>
-                  <a href="#HCC"
-                    ><button type="button" class="btn btn-lg btn-secondary">
+                  <a href="#HCC">
+                  	<button type="button" class="btn btn-lg btn-secondary">
                       Learn More
                       <i
                         class="fa fa-question text-white"
@@ -128,7 +119,7 @@
                         class="fa fa-credit-card text-white"
                         aria-hidden="true"
                       ></i>
-                      Save Lives by Donating to Cancer Patients Now!
+                      Donate Now!
                     </button></a
                   >
                 </div>
@@ -148,7 +139,7 @@
         </div>
       </section>
       <!---------------------svg--------------------->
-      <div class="pt-5">
+      <div id="headersvg">
         <svg
           style="fill: #fff; width: 102%"
           x="0px"
@@ -165,71 +156,61 @@
     <!--------------------- End header --------------------->
 
     <!--------------------- section2 --------------------->
-    <section style="margin: 4rem 0" id="HCC" data-aos="fade-in">
+    <section id="HCC" data-aos="fade-in">
       <div class="container text-center">
-        <h1 class="mb-5">So, What is Hepatocellular Carcinoma?</h1>
+        <h1>So, What is Hepatocellular Carcinoma?</h1>
         <div class="row justify-content-between">
-          <div class="col-md-3">
-            <div class="HCC">
-              <img
-                class="img-fluid"
-                src="img/liver.png"
-                alt="Picture showwing healthy liver, liver with cirrhosis, and HCC"
-                style="display: block; margin-bottom: 2rem"
-              />
-              <p class="text-center">
-                The diagram is showing a healthy liver, a cirrhotic liver and a
-                liver in end-stage cirrhosis with hepatocellular carcinoma.<br />
-                The little dots represents viruses.
-              </p>
+          <div class="col-12">
+            <p class="mt-1 mb-4 lead text-gray-dark">
+              Hepatocellular carcinoma is a fatal malignancy and the most common form of liver cancer; It is responsible for the death of 745,000 lives each year [<a href="conc.html#ref" target="_blank" class="lead">1</a>, <a href="conc.html#ref" target="_blank" class="lead">2</a>]. In the following video from<a href="https://www.youtube.com/channel/UCFPb2QaYiWDcWO6x1q5rZJQ" target="_blank" class="lead"> NewYork-Presbyterian Hospital</a>, Dr. Halazun explains what is HCC and what are the disease's treatment options.
+            </p>
+            <!-------------Video------------->
+            <div id="responsiveyt">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1V7Q0CNGYRM?controls=0&amp;start=2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          </div>
-          <div class="col-md-8 offset-md-1">
-            <p class="lead text-gray-dark">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature, discovered the undoubtable source. Lorem Ipsum comes
-              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-              BC. This book is a treatise on the theory of ethics, very popular
-              during the Renaissance. The first line of Lorem Ipsum, "Lorem
-              ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </p>
-            <p class="mt-5 lead text-gray-dark">
-              The standard chunk of Lorem Ipsum used since the 1500s is
-              reproduced below for those interested. Sections 1.10.32 and
-              1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-              reproduced in their exact original form, accompanied by English
-              versions from the 1914 translation by H. Rackham.
-            </p>
           </div>
         </div>
       </div>
     </section>
-    <!--------------------- section3 --------------------->
+    <!--------------------- 3rd section--------------------->
+    <section id="hetero" data-aos="fade-in">
+      <div class="container">
+        <div class="row justify-content-between HCC-hetero">
+          <div class=" col-12 col-md-6">
+            <h1 class="mb-3">Heterogeneity of HCC</h1>
+            <p class="lead">
+              What sparked off the <a href="https://www.journal-of-hepatology.eu/article/S0168-8278(19)30300-9/fulltext" target="_blank" class="lead">posthoc subgroup analysis of the CheckMate 040 trial</a> is how heterogenetic HCC is. The disease differs in its incidence, etiology, and genomic profiles—especially between Asian and western countries.</p>
+            <p class="lead mt-2">
+              The analysis evaluates the effectiveness, safety, and tolerability of a <a href="https://www.inoncology.com/ourpipeline/pd1-inhibitor#compounds-anchor-1104" target="_blank" class="lead">PD-1 inhibitor</a> named <span class="font-weight-bold lead">nivolumab</span> between the Asian cohort and the general population of the trial.
+            </p>
+          </div>
+          <div class="col-12 col-md-5 offset-md-1">
+            <img src="img/hetero.png" id="img-hetero">
+            <p class="lead p-hetero">A figure representing the concept of intertumoral heterogeneity, which is due to molecular differences between patients [<a class="lead" href="conc.html#ref" target="_blank">1</a>].</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------- last section--------------------->
     <section id="papersections">
       <div class="container p-0 mx-auto text-center" data-aos="zoom-in">
       	<h1 class="mb-5">Now, Let's Explore the trial together!</h1>
         <div class="row px-5 text-center align-items-between">
-          <div class="col-lg-3 col-md-6 p-0">
-            <a href="#">
+          <div class="col-lg-4 col-md-6 p-0">
+            <a href="methods.html">
             	<div class="section">
-            		<img src="img/results.svg">
+            		<img src="img/methods.png">
                 	<h3 class="text-uppercase font-weight-bold">Methodology</h3>
                 	<p class="mb-0 text-small">
                   	Lorem ipsum dolor sit amet, consectetur elit sed do eiusmod te
                 	</p>
               	
             	</div>
-			</a>          
+			     </a>          
           </div>
 
-          <div class="col-lg-3 col-md-6 p-0">
-            <a href="#">
+          <div class="col-lg-4 col-md-6 p-0">
+            <a href="results.html">
             	<div class="section">
             		<img src="img/results.svg">
                 	<h3 class="text-uppercase font-weight-bold">Results</h3>
@@ -240,23 +221,11 @@
           	</a>
           </div>
 
-          <div class="col-lg-3 col-md-6 p-0 order-md-4 order-lg-3">
-            <a href="#">
+          <div class="col-lg-4 col-md-6 p-0" style="margin: auto;">
+            <a href="conc.html">
             	<div class="section">
-            		<img src="img/results.svg">
-                	<h3 class="text-uppercase font-weight-bold">Conclusion</h3>
-                	<p class="mb-0 text-small">
-                  	Lorem ipsum dolor sit amet, consectetur elit sed do eiusmod te
-                	</p>
-            	</div>
-          	</a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 p-0 order-md-3 order-lg-4">
-            <a href="#">
-            	<div class="section">
-            		<img src="img/results.svg">
-                	<h3 class="text-uppercase font-weight-bold">Refrences</h3>
+            		<img src="img/conclusion.png">
+                	<h3 class="text-uppercase font-weight-bold">Conclusion and References</h3>
                 	<p class="mb-0 text-small">
                   	Lorem ipsum dolor sit amet, consectetur elit sed do eiusmod te
                 	</p>
@@ -275,8 +244,8 @@
     <!--------------------- footer --------------------->
     <footer>		
    	<!---------------- upper section ---------->
-    <div class="container-fluid p-0 m-0">
-        <section class="pr-5 pl-5 text-center text-md-left">
+    <div class="container">
+        <section class="text-center text-md-left">
           <div class="row p-0">
             <!----------- Project Amber--------------->
             <div class="col-md-4 p-0 d-md-flex justify-content-center">
@@ -362,7 +331,7 @@
       <div class="copyrights col-12 py-4 mt-5">
         <p class="font-weight-bold text-uppercase text-center m-0 p-0">
           &copy; Amber project is made solely by
-          <span style="color: darkgray">Team Amber</span> in 2020, all right
+          <span style="color: darkgray">Team Amber</span> in 2020, all rights
           preserved |
           <span style="color: darkgray"
             >For Every Mind Makes a Difference!</span

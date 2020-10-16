@@ -15,7 +15,7 @@
       content="Hepatocellular carcinoma, HCC, Liver cancer, cancer, Nivolumab, sorafenib, clinical trial, patients, research, medicine, pharmacology"
     />
     <!--------------------- title --------------------->
-    <title>Results | Project Amber</title>
+    <title>Conclusion and References | Project Amber</title>
     <!--------------------- boostrap --------------------->
     <link
       rel="stylesheet"
@@ -37,80 +37,54 @@
   .navbar {
   background-color: #fff;
 }}
+
 .subtitles-header {
   margin: 0 auto;
 }
-
-.mheader {
-  background-image: url(img/result.png);
+.cheader {
+  background-image: url(img/conc.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:50% calc(50% - -207px);
+  background-position:50% calc(50% - -8px);
 }
-.mheader h1 {
+.cheader h1 {
   text-shadow: 3px 3px 1px #4d4d4d;
 }
-#efficacy .header h3, #patients .header h3 {
-  background-color: #FFB001;
-  border-radius: 7px;
-  text-align: center;
-  max-width: 30%;
-  padding: 7px;
-  margin: 0 auto;
-  letter-spacing: 1px;
+#ref p {
+  color: #1d1d1d;
+  width: 80%;
+  margin: 1rem auto;
 }
-#patients .header h3 {
-  background-color: #0eac92;
-}
-#efficacy .header h3 {
-  background-color: #f3777d;
-}
-#efficacy .header p, #HCC p, #patients .header p {
-  width: 70%;
+#ref h2 {
+  color: #fff;
+  background-color: #6d3469;
+    border-radius: 7px;
     text-align: center;
-    color: #4d4d4d;
+    max-width: 30%;
+    padding: 7px;
     margin: 0 auto;
+    letter-spacing: 1px;
 }
-#efficacy p, #efficacy a, #patients p, #patients a {
-    font-size: 14px;
+#ref p:hover {
+color: #767676;
 }
-
-.slide-5 {
-  padding: 0 4rem;
-  margin-top: 7rem;
+.evidence, .value {
+    background: #f68a70;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
 }
-.slide-5 img, .slide-4 img {
-    width: 65%;
+.value {
+    background: #f1f1f1;
 }
-.slide-4 .middle-img {
-  width: 95%;
-}
-.slide-1 img {
+.evidence p, .value p {
   width: 85%;
-}
-.slide-1 .img2 {
-  display: block;
-  margin-right: auto;
-}
-.slide-1 .img1 {
-  display: block;
-  margin-left: auto;
-}
-@media (max-width: 768px) {
-.slide-5, .slide-4 {
-  padding: 0;
-}
-.slide-5 img, .slide-4 img {
-    width: 40%;
-}
-.slide-1 .img2 {
   margin: 0 auto;
+  color: #1d1d1d;
 }
-.slide-1 .img1 {
-  margin: 0 auto;
-}}
-
-
+.evidence p, .evidence h2 {
+  color: white;
+}
     </style>
   </head>
   <body>
@@ -164,30 +138,24 @@
       <!--------------------- End nav --------------------->
     <!--------------------- header --------------------->
     <header class="resultsheader">
-      <!--------------------- Results header----------------------------->
-      <section class="container py-5 mheader">
-        <h1 class="display-3 text-white text-center">Results</h1>
+      <!---------------------  header----------------------------->
+      <section class="container py-5 cheader">
+        <h1 class="display-3 text-white text-center">Conclusion and References</h1>
         <div class="row">
           <!----------------subtitles----------------------------->
           <div class="col-6 subtitles-header">
               <section class="py-4">
                   <div class="container m-0 p-0">
                     <div class="row justify-content-between">
-                      <div class="col-lg-4 col-12">
-                        <a href="#patients" class="subtitle">
-                          <p>Patients</p>
+                      <div class="col-lg-6 col-12">
+                        <a href="#Added-value" class="subtitle">
+                          <p>Added value</p>
                           <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
                       </div>
-                      <div class="col-lg-4 col-12">
-                        <a href="#safety" class="subtitle">
-                          <p>Safety</p>
-                          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                      </div>
-                      <div class="col-lg-4 col-12">
-                        <a href="#efficacy" class="subtitle">
-                          <p>Efficacy</p>
+                      <div class="col-lg-6 col-12">
+                        <a href="#ref" class="subtitle">
+                          <p>References</p>
                           <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
                       </div>
@@ -199,170 +167,70 @@
       </section>
     </header>
     <!--------------------- End header --------------------->
-
-    <!--------------------- Patients -------------------------------->
-    <section id="patients" class="py-5">
+    <!--------------------------- Added value----------------------------->
+    <section id="Added-value" class="mt-5">
       <div class="container">
-          <!----------- header ------------->
-          <div class="header">
-            <h3 class="mb-4 text-white font-weight-bold" style="min-width: 30%;">Patients</h3>
-            <p class="font-weight-bold mt-5" style="font-size: 20px; color: #6d6d6d;">Patients Distribution</p>
-         </div>
+        <div class="row">
+
+          <div class="p-2 col-12 col-md-8" data-aos="fade-right">
+            <div class="evidence">
+              <h2 class="text-center mb-4 mt-4">Evidence Before This Study</h2>
+              <p class="lead">
+                &#9632; Multikinase inhibitors such as sorafenib, lenvatinib, and regorafenib have been studied and shown survival benefits for HCC patients [<a class="lead text-white" href="conc.html#ref">4</a>].
+              </p>
+              <p class="lead mt-2">&#9632; Tremelimumab: a CLTA-4 checkpoint inhibitor has also shown antitumor and antiviral activity in patients with advanced HCC and chronic hepatitis C [<a class="text-white lead" href="conc.html#ref">5</a>].</p>
+              <p class="lead mt-2 mb-5">&#9632; Before this study, there was limited evidence suggesting that immune checkpoint inhibitors could be useful for these patients, but the potency of PD-1 inhibitors in melanoma provided a rationale for them to be used in the other malignancies.</p>
+            </div>
+          </div>
+
+          <div class="p-2 col-12 col-md-4" data-aos="fade-left">
+            <div class="value">
+              <h2 class="text-center mb-4 mt-4">Added Value of The Study</h2>
+              <p class="lead">
+                &#9632; The study first reported PD-1 inhibitors in HCC patients.
+              </p>
+              <p class="lead mt-2">&#9632; Nivolumab has shown to be safe and effective in both Asian and western patients.</p>
+              <p class="lead mt-2 mb-5">&#9632; The drug is being evaluated as a first-line treatment in patients naive to sorafenib and as a second line for experienced patients.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="container">
-
-            <div class="row slide-1 justify-content-center align-items-center">
-
-              <div class="col-12 col-md-6 text-center">
-                <img class="img1" src="img/Slide1-l.PNG" data-aos="fade-right">
-              </div>
-
-              <div class="col-12 col-md-6 text-center">
-                <img class="img2" src="img/Slide1-r.PNG" data-aos="fade-left">
-              </div>
-
-            </div>
-
-            <div class="row slide-4 justify-content-center align-items-center mt-5" data-aos="fade-in">
-
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide2-l.PNG">
-              </div>
-
-              <div class="col-12 col-md-6 text-center ">
-                <img class="middle-img" src="img/Slide2-m.PNG">
-              </div>
-
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide2-r.PNG">
-              </div>
-
-            </div>
-
-            <div class="row slide-4 justify-content-center align-items-center mt-5" data-aos="zoom-in-up">
-
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide3-l.PNG">
-              </div>
-
-              <div class="col-12 col-md-6 text-center ">
-                <img class="middle-img" src="img/Slide3-m.PNG">
-              </div>
-
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide3-r.PNG">
-              </div>
-
-            </div>
-        </div>
+      </div>
     </section>
-    <!---------------------Efficacy section------------------------->
-    <section id="efficacy" class="py-5" >
+    <!--------------------------- refrences----------------------------->
+    <section id="ref" class="mt-5" data-aos="fade-up">
       <div class="container">
-          <!----------- header ------------->
-          <div class="header" >
-            <h3 class="mb-4 text-white font-weight-bold">Efficacy</h3>
-         </div>
-        </div>
-        <div class="container" data-aos="fade-in">
-          <div class="row slide-4 justify-content-center align-items-center">
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide4-l.PNG" alt="Efficacy 1">
-              </div>
-              <div class="col-12 col-md-6 text-center ">
-                <img class="middle-img" src="img/Slide4-m.PNG" alt="Efficacy 1">
-              </div>
-              <div class="col-12 col-md-3 text-center">
-                <img src="img/Slide4-r.PNG" alt="Efficacy 1">
-              </div>
-          </div>
-          <div class="row slide-5 justify-content-center align-items-center" data-aos="fade-in">
-            <div class="col-12 col-md-4 text-center">
-              <img  src="img/Slide5-1.PNG" alt="reduction in tumor burden was observed">
-            </div>
-            <div class="col-12 col-md-4 text-center">
-              <img  src="img/Slide5-2.PNG" alt="Survival rates achieved up to 24 months">
-            </div>
-            <div class="col-12 col-md-4 text-center">
-            <img  src="img/Slide5-3.PNG" alt="All results were achieved regardless of disease atiology, PD-L1 tumor expression and age">
-            </div>
+        <div class="row">
+          <div class="col-12 p-5">
+            <h2 class="text-center mb-5">References</h2>
+            <a href="https://www.ncbi.nlm.nih.gov/books/NBK553748/" target="_blank"><p class="lead">
+              [1] Hung, M.H. and Wang, X.W., 2019. Molecular Alterations and Heterogeneity in Hepatocellular Carcinoma. In Hepatocellular Carcinoma (pp. 293-316). Humana, Cham.
+            </p></a>
+            <a href="https://www.nature.com/articles/srep45846" target="_blank"><p class="lead">
+              [2] Wong, M.C., Jiang, J.Y., Goggins, W.B., Liang, M., Fang, Y., Fung, F.D., Leung, C., Wang, H.H., Wong, G.L., Wong, V.W. and Chan, H.L., 2017. International incidence and mortality trends of liver cancer: a global profile. Scientific reports, 7, p.45846.
+            </p></a>
+            <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-trial-endpoints-approval-cancer-drugs-and-biologics" target="_blank"><p class="lead">
+              [3] US Food and Drug Administration, 2007. Guidance for industry: clinical trial endpoints for the approval of cancer drugs and biologics. Federal Register, 72.
+            </p></a>
+            <a href="https://www.ncbi.nlm.nih.gov/books/NBK549199/" target="_blank"><p class="lead">
+              [4] Khoo, T.S.W.L., Rehman, A. and Olynyk, J.K., 2019. Tyrosine Kinase Inhibitors in the Treatment of Hepatocellular Carcinoma. Exon Publications, pp.127-139.
+            </p></a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/23466307/" target="_blank"><p class="lead">
+              [5] Sangro, B., Gomez-Martin, C., de la Mata, M., Iñarrairaegui, M., Garralda, E., Barrera, P., Riezu-Boj, J.I., Larrea, E., Alfaro, C., Sarobe, P. and Lasarte, J.J., 2013. A clinical trial of CTLA-4 blockade with tremelimumab in patients with hepatocellular carcinoma and chronic hepatitis C. Journal of Hepatology, 59(1), pp.81-88.
+            </p></a>
           </div>
         </div>
-    </section>
-    <!---------------------Safety section------------------------->
-    <section id="safety" class="py-5" data-aos="fade-up">
-      <div class="container">
-        <!----------- header ------------->
-        <div class="header">
-          <h3 class="mb-4 text-white font-weight-bold">Safety</h3>
-          <p class="mb-4 mt-5">
-            During any therapy, the potential exists for treatment-related adverse events (TRAEs) to occur. In CheckMate 040, patients’ safety was assessed continuously using
-            <a href="https://evs.nci.nih.gov/ftp1/CTCAE/CTCAE_4.03/CTCAE_4.03_2010-06-14_QuickReference_8.5x11.pdf" target="_blank">The Common Terminology Criteria for Adverse Events (CTCAE 4.03)</a> to assess the grading of any TRAEs.
-          </p>
-          <img class="mt-5" src="img/TRAEs.png" alt="Grading and Severity of TRAEs">
-        </div>
-      <!-------- content --------------->
-        <div class="row pt-5 mt-5" data-aos="fade-in">
-          <!---------------------- any grade TRAEs ----------------------------------->
-          <div class="col-12 col-md-4 anygrade">
-            <h3 class="titles font-weight-bold mb-3">Any Grade TRAEs</h3>
-            <p class="lead font-weight-bold">Frequency:</p>
-            <div class="progress my-3">
-             <div class="progress-bar bg-danger" style="width:74%">Asian (74%)</div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-success" style="width:79%">ITT population (79%)</div>
-            </div>
-            <p class="my-3"><span class="lead font-weight-bold">Most common AEs:</span> Pruritus, rash and fatigue.</p>
-            <p><span class="lead font-weight-bold">Intervention:</span> Systemic corticosteroids.</p>
-            <p><span class="lead font-weight-bold">Additional notes:</span> Rechallenge of nivolumab occurred in 29 events in the Asian population after an immune-mediated response. The Rechallenge outcome was recorded in 11 events in which 10 patients did not have a recurrence of the AE after rechallenge.</p>
-          </div>
-          <!---------------------- grade 3/4 TRAEs ----------------------------------->
-          <div class="col-12 col-md-4">
-            <h3 class="titles font-weight-bold mb-3">3/4 Grade TRAEs</h3>
-            <p class="lead font-weight-bold">Frequency:</p>
-            <div class="progress my-3">
-             <div class="progress-bar bg-danger" style="width:16%">Asian (16%)</div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar bg-success" style="width:19%">ITT (19%)</div>
-            </div>
-            <h3 class="titles font-weight-bold mt-5 mb-3">TRAEs of Lab Measures</h3>
-            <p>These were infrequent in both populations and viral kinetics changes were not associated with significant hepatic AEs. </p>
-          </div>
-          <!---------------------- Select TRAEs ----------------------------------->
-          <div class="col-12 col-md-4">
-            <h3 class="titles font-weight-bold mb-3">Select TRAEs (sTRAEs)</h3>
-            <p class="my-3"><span class="lead font-weight-bold">Definition:</span> These were events with a potential inflammatory mechanism that required more frequent monitoring such as hepatitis and infusion hypersensitivity.</p>
-            <p class="lead font-weight-bold">Most common sTRAEs:</p>
-            <p><strong>Of any grade:</strong> Skin and gastrointestinal events.</p>
-            <p><strong>For which patients received immune-modulating therapy:</strong> Skin AEs—for which topical corticosteroids were prescribed.</p>
-            <p></p>
-          </div>
-        </div>
-      </div>  
-      <!-------death------>
-        <div class="container mt-5" data-aos="fade-right">
-          <h3 class="deaths-title font-weight-bold mb-3">Deaths</h3>
-          <div class="row align-items-end">
-            <div class="col-12 col-md-4">
-              <img src="img/death.png" class="opacity-4 death-img" width="85%;">
-            </div>
-            <div class="col-12 col-md-8">
-              <p><span class="lead font-weight-bold">130 ITT patients and 60 Asians</span> died throughout the study with <span class="lead font-weight-bold">disease progression</span> as the most common cause of death. One Asian patient died from a grade 5 pneumonitis occurring after 3.3 months of nivolumab discontinuation. Three died from intracranial hemorrhage, suspected infection, and indeterminable.</p>
-            </div>
-          </div>
-       </div>
+      </div>
     </section>
     <!--------------------svg----------------------------------->
     <div class="svgshape" style="background-color: #fff;">
-		  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-		  <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
-		  </svg>
-		</div>	
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+      </svg>
+    </div>  
     <!--------------------- footer --------------------->
-    <footer>		
-   	<!---------------- upper section ---------->
+    <footer>    
+    <!---------------- upper section ---------->
     <div class="container">
         <section class="text-center text-md-left">
           <div class="row p-0">
